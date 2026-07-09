@@ -182,6 +182,14 @@
   .list li::before { content: "▸"; color: var(--orange); font-weight: 900; }
   .list li b { color: var(--ink); }
 
+  /* Repertório: colunas estreitas — fonte menor e mais compacta pra não quebrar tanto */
+  #repertorio .card { padding: 22px; }
+  #repertorio .card h3 { font-size: .98rem; }
+  #repertorio .card h3 .dur { font-size: .74rem; }
+  #repertorio .list { gap: 7px; }
+  #repertorio .list li { font-size: .82rem; line-height: 1.35; }
+  #repertorio .list li::before { font-size: .8rem; }
+
   /* ---------- PRICING ---------- */
   .price-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
   .price-head h3 { margin: 0; }
@@ -407,7 +415,7 @@
         </ul>
       </div>
       <div class="card">
-        <h3 style="color:var(--turq)">🎸 Rock pros pais <span class="dur">(2–3 por show)</span></h3>
+        <h3 style="color:var(--turq)">🎸 Rock pros pais <span class="dur">(máx. 2 por show)</span></h3>
         <ul class="list" style="margin-top:14px">
           <li><b>We Will Rock You</b> — Queen — a batata do show</li>
           <li><b>Seven Nation Army</b> — o “ôô-ôô” que todos gritam</li>
@@ -445,9 +453,9 @@
       </div>
       <div class="card">
         <span class="tier-tag" style="background:var(--panel-2);color:var(--purple);border:1.5px solid var(--purple)">Premium</span>
-        <div class="price-head" style="margin-top:14px"><h3>Turnê</h3><span class="dur">50–60 min</span></div>
+        <div class="price-head" style="margin-top:14px"><h3>Turnê</h3><span class="dur">1 hora</span></div>
         <div class="price" style="color:var(--purple)">R$ 2.800+</div>
-        <p style="margin-top:10px">Tudo + 3º número, mascote fantasiado, pintura facial, confete e meet &amp; greet com fotos.</p>
+        <p style="margin-top:10px"><b>Show estendido de 1h</b> + 3º número, mascote fantasiado, pintura facial, confete e meet &amp; greet com fotos.</p>
       </div>
     </div>
     <div class="grid g3" style="margin-top:20px">
