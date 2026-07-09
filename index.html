@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banda de Rock pra Festa Infantil — Pitch do Projeto</title>
+<meta name="description" content="Uma banda de rock pra festa da criançada: clássicos infantis em versão rock, uma pitada de rock pros pais e pegada circense. Shows de 40 minutos.">
+<meta name="theme-color" content="#170F26">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Uma banda de rock pra festa da criançada 🤘🎪">
+<meta property="og:description" content="Clássicos infantis em versão rock, rock de verdade pros pais e pegada circense. Shows de 40 minutos. O pitch completo do projeto.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A4%98%3C/text%3E%3C/svg%3E">
+<style>html,body{margin:0;padding:0}</style>
+</head>
+<body>
+<style>
+  :root {
+    --ground: #FBF5EC;
+    --panel: #FFFFFF;
+    --panel-2: #FFF0E4;
+    --ink: #241A30;
+    --ink-soft: #5C4E6B;
+    --line: #E7D9CB;
+    --pink: #F5327D;
+    --yellow: #FFB800;
+    --turq: #0FB5B0;
+    --orange: #FF6A2B;
+    --purple: #7A34E0;
+    --shadow: rgba(36,26,48,.16);
+    --hero-ground: #170F26;
+    --hero-ink: #FFF6EA;
+    --hero-soft: #C6B5D6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #120C1E;
+      --panel: #1D1430;
+      --panel-2: #251838;
+      --ink: #F6EEFF;
+      --ink-soft: #B9A8CE;
+      --line: #35264D;
+      --pink: #FF4D8F;
+      --yellow: #FFC531;
+      --turq: #24D3CD;
+      --orange: #FF7E44;
+      --purple: #A671FF;
+      --shadow: rgba(0,0,0,.45);
+    }
+  }
+  :root[data-theme="light"] {
+    --ground: #FBF5EC; --panel: #FFFFFF; --panel-2: #FFF0E4; --ink: #241A30;
+    --ink-soft: #5C4E6B; --line: #E7D9CB; --pink: #F5327D; --yellow: #FFB800;
+    --turq: #0FB5B0; --orange: #FF6A2B; --purple: #7A34E0; --shadow: rgba(36,26,48,.16);
+  }
+  :root[data-theme="dark"] {
+    --ground: #120C1E; --panel: #1D1430; --panel-2: #251838; --ink: #F6EEFF;
+    --ink-soft: #B9A8CE; --line: #35264D; --pink: #FF4D8F; --yellow: #FFC531;
+    --turq: #24D3CD; --orange: #FF7E44; --purple: #A671FF; --shadow: rgba(0,0,0,.45);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  .display {
+    font-family: "Arial Black", "Helvetica Neue", Impact, system-ui, sans-serif;
+    font-weight: 900;
+    letter-spacing: -.02em;
+    line-height: .95;
+    text-transform: uppercase;
+    text-wrap: balance;
+  }
+
+  .wrap { width: min(1080px, 92vw); margin-inline: auto; }
+  section { padding: clamp(48px, 8vw, 92px) 0; }
+  .eyebrow {
+    font-weight: 800; text-transform: uppercase; letter-spacing: .18em;
+    font-size: .74rem; color: var(--pink); margin: 0 0 14px;
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .eyebrow::before { content: ""; width: 26px; height: 3px; background: var(--pink); border-radius: 3px; }
+  h2.title { font-size: clamp(1.9rem, 4.6vw, 3rem); margin: 0 0 14px; }
+  .lede { font-size: clamp(1.02rem, 2vw, 1.2rem); color: var(--ink-soft); max-width: 62ch; margin: 0 0 8px; }
+
+  /* ---------- MARQUEE STRIPES ---------- */
+  .stripes { height: 14px; width: 100%;
+    background: repeating-linear-gradient(45deg,
+      var(--pink) 0 28px, var(--yellow) 28px 56px, var(--turq) 56px 84px, var(--orange) 84px 112px, var(--purple) 112px 140px);
+  }
+
+  /* ---------- HERO ---------- */
+  .hero { position: relative; background: var(--hero-ground); color: var(--hero-ink); overflow: hidden; isolation: isolate; }
+  .hero canvas { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+  .hero::after {
+    content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: radial-gradient(120% 90% at 50% -10%, rgba(122,52,224,.5), transparent 60%),
+                radial-gradient(80% 70% at 85% 110%, rgba(245,50,125,.35), transparent 60%);
+  }
+  .hero .wrap { position: relative; z-index: 2; padding: clamp(56px,10vw,110px) 0 clamp(52px,8vw,86px); }
+  .kicker {
+    display: inline-flex; align-items: center; gap: 9px; font-weight: 800;
+    text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; color: var(--yellow);
+    border: 1.5px solid rgba(255,184,0,.4); padding: 7px 14px; border-radius: 100px; margin-bottom: 26px;
+  }
+  .hero h1 { font-size: clamp(2.6rem, 8.5vw, 6.1rem); margin: 0; color: var(--hero-ink); }
+  .hero h1 .pop { display: inline-block; color: var(--yellow); text-shadow: 5px 5px 0 var(--pink); }
+  .hero h1 .pop.b { color: var(--turq); text-shadow: 5px 5px 0 var(--purple); }
+  .hero p.sub { font-size: clamp(1.05rem, 2.4vw, 1.4rem); color: var(--hero-soft); max-width: 54ch; margin: 26px 0 0; line-height: 1.5; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: .92rem;
+    background: rgba(255,255,255,.07); border: 1.5px solid rgba(255,255,255,.16);
+    padding: 10px 16px; border-radius: 100px; color: var(--hero-ink);
+  }
+  .chip b { color: var(--yellow); }
+  .note-band {
+    margin-top: 30px; font-size: .92rem; color: var(--hero-soft);
+    border-left: 3px solid var(--pink); padding: 4px 0 4px 16px; max-width: 56ch;
+  }
+
+  /* ---------- CARDS / GRID ---------- */
+  .grid { display: grid; gap: 20px; }
+  .g3 { grid-template-columns: repeat(3, 1fr); }
+  .g2 { grid-template-columns: repeat(2, 1fr); }
+  .card {
+    background: var(--panel); border: 1.5px solid var(--line); border-radius: 18px;
+    padding: 26px; box-shadow: 0 10px 30px -18px var(--shadow);
+  }
+  .card h3 { margin: 0 0 8px; font-size: 1.18rem; }
+  .card p { margin: 0; color: var(--ink-soft); font-size: .97rem; }
+  .num-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 42px; height: 42px; border-radius: 12px; font-weight: 900; font-size: 1.1rem;
+    color: #fff; margin-bottom: 16px;
+  }
+
+  /* ---------- NAMES ---------- */
+  .names { display: flex; flex-wrap: wrap; gap: 12px; }
+  .name {
+    font-weight: 800; font-size: 1rem; padding: 12px 18px; border-radius: 100px;
+    border: 1.5px solid var(--line); background: var(--panel); color: var(--ink);
+  }
+  .name.star { color: #fff; border: none; box-shadow: 0 8px 22px -12px var(--shadow); }
+  .name.star small { display: block; font-weight: 600; font-size: .72rem; opacity: .92; margin-top: 2px; text-transform: none; letter-spacing: 0; }
+  .name-note { margin-top: 18px; font-size: .92rem; color: var(--ink-soft); }
+
+  /* ---------- CHARACTERS ---------- */
+  .g4 { grid-template-columns: repeat(4, 1fr); }
+  .char { position: relative; overflow: hidden; }
+  .char .role { font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: .72rem; margin-bottom: 12px; }
+  .char h3 { font-size: 1.05rem; }
+  .char .bordao { margin-top: 14px; font-style: italic; font-weight: 700; font-size: .95rem; }
+  .dot { width: 40px; height: 40px; border-radius: 12px; margin-bottom: 14px; }
+
+  /* ---------- TIMELINE ---------- */
+  .timeline { display: grid; gap: 0; margin-top: 8px; }
+  .tl {
+    display: grid; grid-template-columns: 96px 1fr; gap: 20px; align-items: start;
+    padding: 18px 0; border-top: 1.5px solid var(--line);
+  }
+  .tl:last-child { border-bottom: 1.5px solid var(--line); }
+  .tl .time {
+    font-variant-numeric: tabular-nums; font-weight: 800; font-size: .95rem; color: var(--purple);
+    font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+  .tl h4 { margin: 0 0 4px; font-size: 1.05rem; }
+  .tl p { margin: 0; color: var(--ink-soft); font-size: .94rem; }
+  .tl.hi h4 { color: var(--pink); }
+
+  /* ---------- REPERTOIRE / LISTS ---------- */
+  .list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .list li { display: flex; gap: 12px; align-items: baseline; font-size: .97rem; }
+  .list li::before { content: "▸"; color: var(--orange); font-weight: 900; }
+  .list li b { color: var(--ink); }
+
+  /* ---------- PRICING ---------- */
+  .price-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+  .price-head h3 { margin: 0; }
+  .price { font-family: "Arial Black", system-ui, sans-serif; font-weight: 900; font-size: 1.15rem; }
+  .tier-tag { font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; padding: 4px 10px; border-radius: 100px; }
+  .feat-tier { border-color: transparent; box-shadow: 0 16px 40px -20px var(--shadow); position: relative; }
+  .feat-tier::before {
+    content: ""; position: absolute; inset: 0; border-radius: 18px; padding: 2px;
+    background: linear-gradient(135deg, var(--pink), var(--yellow), var(--turq));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none;
+  }
+  .dur { color: var(--ink-soft); font-size: .9rem; font-weight: 600; }
+
+  /* ---------- NEXT STEPS ---------- */
+  .steps { counter-reset: step; display: grid; gap: 14px; }
+  .step { display: grid; grid-template-columns: 44px 1fr; gap: 16px; align-items: center; }
+  .step .n {
+    counter-increment: step; width: 44px; height: 44px; border-radius: 50%;
+    display: grid; place-items: center; font-weight: 900; color: #fff; background: var(--purple);
+  }
+  .step .n::before { content: counter(step); }
+  .step p { margin: 0; font-weight: 600; }
+  .step p span { display: block; font-weight: 400; color: var(--ink-soft); font-size: .92rem; }
+
+  /* ---------- FOOTER ---------- */
+  footer { background: var(--hero-ground); color: var(--hero-soft); text-align: center; padding: 56px 0; }
+  footer .display { color: var(--hero-ink); font-size: clamp(1.6rem, 4vw, 2.4rem); margin: 0 0 12px; }
+  footer p { max-width: 46ch; margin: 0 auto; }
+  footer .horns { font-size: 2.4rem; margin-bottom: 8px; }
+
+  /* ---------- THEME TOGGLE ---------- */
+  .toggle {
+    position: fixed; top: 16px; right: 16px; z-index: 50;
+    background: rgba(0,0,0,.4); color: #fff; border: 1.5px solid rgba(255,255,255,.25);
+    width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 1.15rem;
+    backdrop-filter: blur(6px); display: grid; place-items: center;
+  }
+  .toggle:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--purple); outline-offset: 2px; }
+
+  @media (max-width: 860px) {
+    .g4 { grid-template-columns: repeat(2, 1fr); }
+    .g3 { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 620px) {
+    .g2, .g4 { grid-template-columns: 1fr; }
+    .tl { grid-template-columns: 74px 1fr; gap: 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .hero canvas { display: none; }
+  }
+</style>
+
+<button class="toggle" id="themeBtn" aria-label="Alternar tema claro/escuro">◐</button>
+
+<div class="stripes"></div>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <span class="kicker">🤘 Projeto de banda • pitch inicial</span>
+    <h1 class="display">Uma banda de <span class="pop">rock</span><br>pra festa da <span class="pop b">criançada</span></h1>
+    <p class="sub">Clássicos infantis em versão rock, uma pitada de rock “de verdade” pros pais, e uma pegada circense pra fazer a molecada surtar de alegria. Shows de 40 minutos.</p>
+    <div class="chips">
+      <span class="chip">⏱️ <b>40 min</b> de showzão</span>
+      <span class="chip">🎸 <b>4 integrantes</b> ao vivo</span>
+      <span class="chip">🎪 <b>Circo</b> + interação</span>
+      <span class="chip">🎂 Crianças <b>3–10 anos</b></span>
+    </div>
+    <p class="note-band">Não é festa com banda. É um <b style="color:var(--yellow)">showzão de rock</b> que aconteceu na festa: a criançada pula, os pais cantam junto.</p>
+  </div>
+</header>
+
+<!-- ================= CONCEITO ================= -->
+<section id="conceito">
+  <div class="wrap">
+    <p class="eyebrow">O conceito</p>
+    <h2 class="title display">Três pilares que seguram o show</h2>
+    <p class="lede">O mercado de festa infantil é dominado por personagem de aluguel, palhaço e DJ com playback. Uma banda de rock ao vivo é raridade — e é aí que a gente vira “aquele show diferente da festa”.</p>
+    <div class="grid g3" style="margin-top:34px">
+      <div class="card">
+        <div class="num-badge" style="background:var(--pink)">1</div>
+        <h3>Infantil rockeado</h3>
+        <p>“A Barata”, “Atirei o Pau no Gato”, “O Sapo Não Lava o Pé” com guitarra distorcida e bateria pesada. A letra a criança já conhece — a roupagem é de show de rock.</p>
+      </div>
+      <div class="card">
+        <div class="num-badge" style="background:var(--turq)">2</div>
+        <h3>Rock pros pais</h3>
+        <p>No meio do show entram 2–3 clássicos que os adultos amam: Queen, Skank, Legião. Prende os pais — e são eles que contratam e indicam.</p>
+      </div>
+      <div class="card">
+        <div class="num-badge" style="background:var(--orange)">3</div>
+        <h3>Pegada circense</h3>
+        <p>Malabares, mágica simples, bolhas gigantes, o integrante “atrapalhado”, plateia dividida em times. A criança não assiste — ela participa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stripes"></div>
+
+<!-- ================= NOMES ================= -->
+<section id="nomes" style="background:var(--panel-2)">
+  <div class="wrap">
+    <p class="eyebrow">Sugestões de nome</p>
+    <h2 class="title display">Como a banda pode se chamar</h2>
+    <p class="lede">Ainda em aberto — abaixo os favoritos. Fáceis de falar, buscáveis no Instagram e com cara de rock + diversão.</p>
+    <div class="names" style="margin-top:30px">
+      <span class="name star" style="background:var(--pink)">Rock da Criançada<small>Direto e ótimo pra achar no Google</small></span>
+      <span class="name star" style="background:var(--purple)">Turma do Amplificador<small>Vira mascote e história</small></span>
+      <span class="name star" style="background:var(--turq)">Os Rocketeiros<small>Aventura + turma</small></span>
+      <span class="name star" style="background:var(--orange)">Banda Pé de Moleque<small>Brasileiro e afetivo</small></span>
+    </div>
+    <div class="names" style="margin-top:14px">
+      <span class="name">Os Baratinhas</span>
+      <span class="name">Rock do Sapo</span>
+      <span class="name">Estrondo Kids</span>
+      <span class="name">Palco Pirulito</span>
+      <span class="name">Os Roqueirinhos</span>
+      <span class="name">Bicho-Grilo Kids</span>
+      <span class="name">Rockzeira</span>
+      <span class="name">Banda Foguetinho</span>
+    </div>
+    <p class="name-note">Antes de fechar: conferir o @ livre no Instagram/TikTok, o domínio .com.br e uma busca no INPI pra não bater com marca existente.</p>
+  </div>
+</section>
+
+<!-- ================= PERSONAGENS ================= -->
+<section id="personagens">
+  <div class="wrap">
+    <p class="eyebrow">Os personagens</p>
+    <h2 class="title display">Quatro músicos, quatro personagens</h2>
+    <p class="lede">Cada integrante vira um personagem com nome, cor e jeito próprios. A criança ganha “o favorito” — e músicos viram marca.</p>
+    <div class="grid g4" style="margin-top:34px">
+      <div class="card char">
+        <div class="dot" style="background:var(--yellow)"></div>
+        <div class="role" style="color:var(--yellow)">🎤 Vocalista</div>
+        <h3>O Capitão</h3>
+        <p>O líder animado, mestre de cerimônias. Conduz tudo e puxa as brincadeiras.</p>
+        <div class="bordao" style="color:var(--yellow)">“Cadê a energia dessa festa?!”</div>
+      </div>
+      <div class="card char">
+        <div class="dot" style="background:var(--orange)"></div>
+        <div class="role" style="color:var(--orange)">🎸 Guitarrista</div>
+        <h3>O durão fofo</h3>
+        <p>Faz cara de roqueiro sério, solos épicos, mas se derrete com a criançada.</p>
+        <div class="bordao" style="color:var(--orange)">“Solta o 🤘!”</div>
+      </div>
+      <div class="card char">
+        <div class="dot" style="background:var(--turq)"></div>
+        <div class="role" style="color:var(--turq)">🎸 Baixista</div>
+        <h3>O tímido genial</h3>
+        <p>Fala pouco, mas quando toca o chão treme e todo mundo pula.</p>
+        <div class="bordao" style="color:var(--turq)">“…vai tremer o chão.”</div>
+      </div>
+      <div class="card char">
+        <div class="dot" style="background:var(--pink)"></div>
+        <div class="role" style="color:var(--pink)">🥁 Baterista</div>
+        <h3>O maluco divertido</h3>
+        <p>O motor da bagunça: caretas, gira baqueta, puxa o “vamos fazer barulho!”.</p>
+        <div class="bordao" style="color:var(--pink)">“Faz baruuulho!”</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stripes"></div>
+
+<!-- ================= SHOW / TIMELINE ================= -->
+<section id="show" style="background:var(--panel-2)">
+  <div class="wrap">
+    <p class="eyebrow">O show</p>
+    <h2 class="title display">40 minutos, minuto a minuto</h2>
+    <p class="lede">A criança perde o foco a cada 3–4 minutos, então a gente alterna música, brincadeira e interação o tempo todo — sempre subindo a energia até o final.</p>
+    <div class="timeline">
+      <div class="tl"><div class="time">0–4</div><div><h4>Explosão de abertura</h4><p>Vinheta + música-tema própria e “A Barata” em versão rock. Fisga na hora.</p></div></div>
+      <div class="tl"><div class="time">4–8</div><div><h4>Primeira interação</h4><p>Divide a plateia em times “ROCK” x “AND ROLL”, apresenta os personagens.</p></div></div>
+      <div class="tl hi"><div class="time">8–11</div><div><h4>🎪 Número circense: malabares cômicos</h4><p>O baterista “atrapalhado” erra de propósito. Primeira grande risada.</p></div></div>
+      <div class="tl"><div class="time">11–14</div><div><h4>Brincadeira de mão</h4><p>“Escravos de Jó” + medley interativo. Concentração divertida.</p></div></div>
+      <div class="tl hi"><div class="time">14–18</div><div><h4>🎁 Presente dos pais: “We Will Rock You”</h4><p>O “pá-pá-pum” do Queen. Crianças e pais juntos, solo de guitarra épico.</p></div></div>
+      <div class="tl"><div class="time">18–20</div><div><h4>Momento cantável</h4><p>“Borboletinha” em power ballad fofa, luzes baixas. Respiro emocional.</p></div></div>
+      <div class="tl hi"><div class="time">20–23</div><div><h4>🎩 Mágica + bolhas gigantes</h4><p>Encantamento visual sobre a plateia. O “uau”.</p></div></div>
+      <div class="tl hi"><div class="time">23–26</div><div><h4>Pico de energia</h4><p>“(Não) Atirei o Pau no Gato” acelerada. Todo mundo pula — é o vídeo que vai pras redes.</p></div></div>
+      <div class="tl"><div class="time">26–29</div><div><h4>Rock nacional</h4><p>Skank / Jota Quest — os pais cantam do início ao fim.</p></div></div>
+      <div class="tl hi"><div class="time">29–34</div><div><h4>🌟 Momento do aniversariante</h4><p>“A Canoa Virou” chamando os nomes das crianças. A parte que a família nunca esquece.</p></div></div>
+      <div class="tl hi"><div class="time">34–40</div><div><h4>🚀 Grande final + parabéns rockeado</h4><p>Medley explosivo, chuva de confete, foto oficial com o backdrop da marca.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REPERTORIO ================= -->
+<section id="repertorio">
+  <div class="wrap">
+    <p class="eyebrow">Repertório</p>
+    <h2 class="title display">O setlist que agrada os dois públicos</h2>
+    <div class="grid g2" style="margin-top:30px">
+      <div class="card">
+        <h3 style="color:var(--pink)">🇧🇷 Infantil rockeado <span class="dur">(domínio público)</span></h3>
+        <ul class="list" style="margin-top:14px">
+          <li><b>A Barata</b> — riff pesado e cômico, música-símbolo</li>
+          <li><b>Atirei o Pau no Gato</b> — punk rock rápido, hino de pulo</li>
+          <li><b>O Sapo Não Lava o Pé</b> — rock’n’roll anos 50</li>
+          <li><b>Borboletinha</b> — power ballad fofa</li>
+          <li><b>Ciranda Cirandinha</b> — começa doce, explode em rock</li>
+          <li><b>Marcha Soldado</b> — batida marcial, a molecada marcha</li>
+          <li><b>A Canoa Virou</b> — chama o nome de cada criança</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="color:var(--turq)">🎸 Rock pros pais <span class="dur">(2–3 por show)</span></h3>
+        <ul class="list" style="margin-top:14px">
+          <li><b>We Will Rock You</b> — Queen — a batata do show</li>
+          <li><b>Seven Nation Army</b> — o “ôô-ôô” que todos gritam</li>
+          <li><b>Smoke on the Water</b> — só o riff já enlouquece</li>
+          <li><b>Blitzkrieg Bop</b> — Ramones — “Hey Ho, Let’s Go!”</li>
+          <li><b>Pais e Filhos</b> — Legião — momento família</li>
+          <li><b>Skank / Jota Quest</b> — animadas e cantáveis</li>
+        </ul>
+        <p style="margin-top:16px;font-size:.86rem;color:var(--ink-soft)">💡 Vale compor 1–2 <b>músicas próprias</b> (tema da banda) — sem questão de direitos e vira a assinatura sonora.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stripes"></div>
+
+<!-- ================= NEGOCIO ================= -->
+<section id="negocio" style="background:var(--panel-2)">
+  <div class="wrap">
+    <p class="eyebrow">O negócio</p>
+    <h2 class="title display">Três pacotes pra vender</h2>
+    <p class="lede">Faixas de referência (mercado BR, 2026) — a maioria escolhe o do meio. Começa mais acessível pra formar portfólio e sobe conforme a agenda enche.</p>
+    <div class="grid g3" style="margin-top:34px">
+      <div class="card">
+        <span class="tier-tag" style="background:var(--panel-2);color:var(--turq);border:1.5px solid var(--turq)">Básico</span>
+        <div class="price-head" style="margin-top:14px"><h3>Esquenta</h3><span class="dur">30 min</span></div>
+        <div class="price" style="color:var(--turq)">R$ 900–1.500</div>
+        <p style="margin-top:10px">Banda (4), 1 número circense, som próprio, adesivos de lembrança.</p>
+      </div>
+      <div class="card feat-tier">
+        <span class="tier-tag" style="background:var(--pink);color:#fff">⭐ Mais pedido</span>
+        <div class="price-head" style="margin-top:14px"><h3>Showzão</h3><span class="dur">40 min</span></div>
+        <div class="price" style="color:var(--pink)">R$ 1.500–2.800</div>
+        <p style="margin-top:10px">Tudo do básico + 2–3 números circenses, luz, backdrop da marca e momento do aniversariante.</p>
+      </div>
+      <div class="card">
+        <span class="tier-tag" style="background:var(--panel-2);color:var(--purple);border:1.5px solid var(--purple)">Premium</span>
+        <div class="price-head" style="margin-top:14px"><h3>Turnê</h3><span class="dur">50–60 min</span></div>
+        <div class="price" style="color:var(--purple)">R$ 2.800+</div>
+        <p style="margin-top:10px">Tudo + 3º número, mascote fantasiado, pintura facial, confete e meet &amp; greet com fotos.</p>
+      </div>
+    </div>
+    <div class="grid g3" style="margin-top:20px">
+      <div class="card"><h3 style="font-size:1rem">🎯 Onde estão os contratos</h3><p style="margin-top:8px">Aniversários, buffets infantis, escolas, shoppings, empresas (Dia das Crianças) e prefeituras.</p></div>
+      <div class="card"><h3 style="font-size:1rem">📱 O que vende</h3><p style="margin-top:8px">Vídeo de criança pulando + pais cantando Queen. Boca a boca e Instagram/TikTok mandam.</p></div>
+      <div class="card"><h3 style="font-size:1rem">📈 Fins de semana são o ouro</h3><p style="margin-top:8px">Maioria das festas é sábado/domingo — dá pra fazer 2 shows por dia.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROXIMOS PASSOS ================= -->
+<section id="passos">
+  <div class="wrap">
+    <p class="eyebrow">Próximos passos</p>
+    <h2 class="title display">Se a gente fizer só 5 coisas primeiro</h2>
+    <div class="steps" style="margin-top:30px">
+      <div class="step"><div class="n"></div><p>Escolher o nome <span>e garantir os @ das redes sociais.</span></p></div>
+      <div class="step"><div class="n"></div><p>Ensaiar 40 min de repertório <span>rock-infantil que funcione de ponta a ponta.</span></p></div>
+      <div class="step"><div class="n"></div><p>Montar 2–3 números circenses <span>simples e seguros (lenços, bolhas, o atrapalhado).</span></p></div>
+      <div class="step"><div class="n"></div><p>Fazer 1 show-teste e gravar <span>material bom — 1 dia de gravação rende 1 mês de posts.</span></p></div>
+      <div class="step"><div class="n"></div><p>Colocar o Instagram no ar <span>com o vídeo de apresentação e começar a divulgar.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="horns">🤘🎪🎸</div>
+    <p class="display">O rock que a criançada pediu</p>
+    <p>Do parquinho pro palco: a gente toca, a criançada pula, os pais cantam junto.</p>
+  </div>
+</footer>
+<div class="stripes"></div>
+
+<script>
+  // Theme toggle
+  (function () {
+    var btn = document.getElementById('themeBtn');
+    btn.addEventListener('click', function () {
+      var cur = document.documentElement.getAttribute('data-theme');
+      var isDark = cur ? cur === 'dark'
+        : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    });
+  })();
+
+  // Hero confetti
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var canvas = document.getElementById('confetti');
+    var hero = canvas.parentElement;
+    var ctx = canvas.getContext('2d');
+    var colors = ['#F5327D', '#FFB800', '#0FB5B0', '#FF6A2B', '#7A34E0', '#FFFFFF'];
+    var pieces = [];
+    var W, H;
+    function resize() {
+      W = canvas.width = hero.offsetWidth;
+      H = canvas.height = hero.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    var COUNT = 46;
+    for (var i = 0; i < COUNT; i++) {
+      pieces.push({
+        x: Math.random() * W,
+        y: Math.random() * H - H,
+        r: 4 + Math.random() * 7,
+        c: colors[i % colors.length],
+        vy: 0.5 + Math.random() * 1.1,
+        vx: -0.4 + Math.random() * 0.8,
+        rot: Math.random() * Math.PI,
+        vr: -0.04 + Math.random() * 0.08,
+        tilt: Math.random()
+      });
+    }
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      for (var i = 0; i < pieces.length; i++) {
+        var p = pieces[i];
+        p.y += p.vy; p.x += p.vx; p.rot += p.vr;
+        if (p.y > H + 20) { p.y = -20; p.x = Math.random() * W; }
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rot);
+        ctx.globalAlpha = 0.85;
+        ctx.fillStyle = p.c;
+        ctx.fillRect(-p.r / 2, -p.r / 2, p.r, p.r * 0.6);
+        ctx.restore();
+      }
+      requestAnimationFrame(draw);
+    }
+    draw();
+  })();
+</script>
+
+</body></html>
