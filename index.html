@@ -241,11 +241,17 @@
   .steps { counter-reset: step; display: grid; gap: 16px; }
   .step { display: grid; grid-template-columns: 48px 1fr; gap: 16px; align-items: center; }
   .step .n {
-    counter-increment: step; width: 48px; height: 48px; border-radius: 50%;
+    width: 48px; height: 48px; border-radius: 50%;
     display: grid; place-items: center; font-weight: 900; color: #fff; background: var(--purple);
     border: var(--bw) solid var(--edge); box-shadow: var(--stk-sm);
   }
-  .step .n::before { content: counter(step); }
+  .step:not(.done) .n { counter-increment: step; }
+  .step:not(.done) .n::before { content: counter(step); }
+  .step.done .n { background: var(--turq); }
+  .step.done .n::before { content: "✓"; font-size: 1.4rem; line-height: 1; }
+  .step.done p { text-decoration: line-through; text-decoration-color: var(--turq);
+    text-decoration-thickness: 2px; color: var(--ink-soft); }
+  .step.done p span { text-decoration: none; }
   .step p { margin: 0; font-weight: 700; }
   .step p span { display: block; font-weight: 400; color: var(--ink-soft); font-size: .92rem; }
 
@@ -633,9 +639,10 @@
 <section id="passos">
   <div class="wrap">
     <p class="eyebrow">Próximos passos</p>
-    <h2 class="title display">Se a gente fizer só 5 coisas primeiro</h2>
+    <h2 class="title display">O checklist pra estrear</h2>
     <div class="steps" style="margin-top:30px">
-      <div class="step"><div class="n"></div><p>Escolher o nome <span>e garantir os @ das redes sociais.</span></p></div>
+      <div class="step done"><div class="n"></div><p>Escolher o nome <span>Fechado — é o KidRocks!</span></p></div>
+      <div class="step"><div class="n"></div><p>Adquirir os equipamentos <span>instrumentos, amplificação, microfones, cabos e transporte.</span></p></div>
       <div class="step"><div class="n"></div><p>Ensaiar 40 min de repertório <span>rock-infantil que funcione de ponta a ponta.</span></p></div>
       <div class="step"><div class="n"></div><p>Montar 2–3 números circenses <span>simples e seguros (lenços, bolhas, o atrapalhado).</span></p></div>
       <div class="step"><div class="n"></div><p>Fazer 1 show-teste e gravar <span>material bom — 1 dia de gravação rende 1 mês de posts.</span></p></div>
